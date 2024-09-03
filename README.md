@@ -2,11 +2,10 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called Session ID - Session Title.  
-
+This repository contains the material for the SAP TechEd 2024 session called AI280 - Set up Joule to answer questions in your own policy documents.
 ## Overview
 
-This session introduces attendees to...
+This session introduces attendees to how they can upload documents to their sharepoint ask questions about them via Joule...
 
 ## Requirements
 
