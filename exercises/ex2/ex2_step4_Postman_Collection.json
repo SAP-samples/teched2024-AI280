@@ -1,0 +1,165 @@
+{
+  "info": {
+    "name": "Teched_AI280",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "01 Get Auth Token",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json",
+            "disabled": false,
+            "type": "default"
+          },
+          {
+            "key": "content-type",
+            "value": "application/x-www-form-urlencoded",
+            "disabled": false,
+            "type": "default"
+          }
+        ],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "https://<auth_tenant_id>.accounts.ondemand.com/oauth2/token",
+          "protocol": "https",
+          "host": [
+            "<auth_tenant_id>",
+            "accounts",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "oauth2",
+            "token"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "client_id",
+              "value": "<client_id>",
+              "disabled": false,
+              "type": "default"
+            },
+            {
+              "key": "grant_type",
+              "value": "client_credentials",
+              "disabled": false,
+              "type": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "02 Get Document Grounding Pipelines",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json",
+            "disabled": false,
+            "type": "default"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer <auth_token>",
+            "disabled": false,
+            "type": "default"
+          }
+        ],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "https://mtls.rage.<tenant_id>.kyma.ondemand.com/pipeline/api/v1/pipeline",
+          "protocol": "https",
+          "host": [
+            "mtls",
+            "rage",
+            "<tenant_id>",
+            "kyma",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "pipeline",
+            "api",
+            "v1",
+            "pipeline"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "03 Create Document Grounding Pipeline",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer <auth_token>",
+            "disabled": false,
+            "type": "default"
+          },
+          {
+            "key": "content-type",
+            "value": "application/json",
+            "disabled": false,
+            "type": "default"
+          }
+        ],
+        "auth": null,
+        "description": "",
+        "url": {
+          "raw": "https://mtls.rage.<tenant_id>.kyma.ondemand.com/pipeline/api/v1/pipeline",
+          "protocol": "https",
+          "host": [
+            "mtls",
+            "rage",
+            "<tenant_id>",
+            "kyma",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "pipeline",
+            "api",
+            "v1",
+            "pipeline"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"MSSharePoint\",\n  \"configuration\": {\n    \"destination\": \"<NAME_OF_DESTINATION>\",\n    \"sharePoint\": {\n      \"site\": {\n        \"name\": \"<NAME_OF_SHAREPOINT_SITE>\"\n      }\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "bruno",
+      "event": []
+    }
+  ],
+  "variable": []
+}
