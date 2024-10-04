@@ -1,0 +1,134 @@
+{
+  "name": "Teched_AI280",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "01 Get Auth Token",
+      "seq": 3,
+      "request": {
+        "url": "https://<auth_tenant_id>.accounts.ondemand.com/oauth2/token",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "accept",
+            "value": "application/json",
+            "enabled": true
+          },
+          {
+            "name": "content-type",
+            "value": "application/x-www-form-urlencoded",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "formUrlEncoded",
+          "formUrlEncoded": [
+            {
+              "name": "client_id",
+              "value": "<client_id>",
+              "enabled": true
+            },
+            {
+              "name": "grant_type",
+              "value": "client_credentials",
+              "enabled": true
+            }
+          ],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "02 Get Document Grounding Pipelines",
+      "seq": 3,
+      "request": {
+        "url": "https://mtls.rage.<tenant_id>.kyma.ondemand.com/pipeline/api/v1/pipeline",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "accept",
+            "value": "application/json",
+            "enabled": true
+          },
+          {
+            "name": "Authorization",
+            "value": "Bearer <auth_token>",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "03 Create Document Grounding Pipeline",
+      "seq": 5,
+      "request": {
+        "url": "https://mtls.rage.<tenant_id>.kyma.ondemand.com/pipeline/api/v1/pipeline",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "Bearer <auth_token>",
+            "enabled": true
+          },
+          {
+            "name": "content-type",
+            "value": "application/json",
+            "enabled": true
+          }
+        ],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"type\": \"MSSharePoint\",\n  \"configuration\": {\n    \"destination\": \"<NAME_OF_DESTINATION>\",\n    \"sharePoint\": {\n      \"site\": {\n        \"name\": \"<NAME_OF_SHAREPOINT_SITE>\"\n      }\n    }\n  }\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Teched_AI280",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "clientCertificates": {
+      "enabled": true,
+      "certs": []
+    }
+  }
+}

@@ -2,35 +2,40 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called AI280 - Set up Joule to answer questions in your own policy documents.
+This repository contains the material for the SAP TechEd 2024 session ["AI280 - Set up Joule to answer questions in your own policy documents"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682396001fuAf).
+
 ## Overview
 
-This session introduces attendees to how they can upload documents to their sharepoint ask questions about them via Joule...
+This session introduces you how to setup Joule in your company's environment to work across cloud solutions from SAP. The session's main focus is on setting up document grounding in Joule to get answers based on your company's business documents, such as policy documents. 
 
-## Requirements
+To setup document grounding, one requires a existing Joule setup. Hence, the below exercises will guide you through activating Joule in a first step and activating document grounding in Joule in a second step.
 
-The requirements to follow the exercises in this repository are...
+In addition, you can find the presented slides for your reference [here](AI280_Joule_Document_Grounding_Setup_Slides.pdf).
 
-## Exercises
+## Activate Joule & Setup Document Grounding
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
+> [!IMPORTANT]  
+> If you intend to setup Joule in your company's landscape, a number of prerequisites need to apply. Next to having the licenses for the respective products, you need admin roles to many systems. If you don't have those, please ask the IT admins in your company for support.
+> 
+> Please visit each exercise for a list of detailed prerequisites.
 
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
+1. [Activate Joule](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-joule-and-sap/ba-p/13575477)
+    - This exercise will walk you along the following steps:
+        1. Activate Joule by Running Boosters
+        2. Setup SAP Cloud Identity Services
+        3. Configure SAP Cloud Identity Services with SAP SuccessFactors
+        4. Add Trusted Domains in SAP Cloud Identity Services
+        5. Configure Navigation Service
+    - If you encounter any issues during the setup, you can refer to [Joule with SAP SuccessFactors - Common Setup Issues](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-with-sfsf-common-setup-issues/ba-p/13650311) for troubleshooting advice.
   
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+2. [Activate Document Grounding](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-document-grounding-for/ba-p/13739501)
+   - This exercise will walk you along the following steps:
+        1. Prepare the Sharepoint Integration    
+        2. Activate the Grounding Service in your SAP BTP Subaccount & Create a Service Key
+        3. Create a Destination in your SAP BTP Subaccount
+        4. Set up Content Ingestion
+        5. Test in Joule
+   - In addition, please find the videos demonstrated during the session as well as API collections for Postman and Bruno under [exercise 2](./exercises/ex2).
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
