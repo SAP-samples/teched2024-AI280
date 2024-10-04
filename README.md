@@ -10,6 +10,8 @@ This session introduces you how to setup Joule in your company's environment to 
 
 To setup document grounding, one requires a existing Joule setup. Hence, the below exercises will guide you through activating Joule in a first step and activating document grounding in Joule in a second step.
 
+In addition, you can find the presented slides for your reference [here](AI280_Joule_Document_Grounding_Setup_Slides.pdf).
+
 ## Activate Joule & Setup Document Grounding
 
 > [!IMPORTANT]  
