@@ -6,9 +6,9 @@ This repository contains the material for the SAP TechEd 2024 session ["AI280 - 
 
 ## Overview
 
-This session introduces you how to setup Joule in your company's environment to work across cloud solutions from SAP. In addition, it explains how to setup document grounding to get answers based on your company's business documents. 
+This session introduces you how to setup Joule in your company's environment to work across cloud solutions from SAP. The session's main focus is on setting up document grounding in Joule to get answers based on your company's business documents, such as policy documents. 
 
-The below exercises will walk you through the setup process.
+To setup document grounding, one requires a existing Joule setup. Hence, the below exercises will guide you through activating Joule in a first step and activating document grounding in Joule in a second step.
 
 ## Activate Joule & Setup Document Grounding
 
