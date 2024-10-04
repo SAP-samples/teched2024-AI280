@@ -17,7 +17,7 @@ The below exercises will walk you through the setup process.
 > 
 > Please visit each exercise for a list of detailed prerequisites.
 
-1. [Activate Joule for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-joule-and-sap/ba-p/13575477)
+1. [Activate Joule](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-joule-and-sap/ba-p/13575477)
     - This exercise will walk you along the following steps:
         1. Activate Joule by Running Boosters
         2. Setup SAP Cloud Identity Services
@@ -26,13 +26,14 @@ The below exercises will walk you through the setup process.
         5. Configure Navigation Service
     - If you encounter any issues during the setup, you can refer to [Joule with SAP SuccessFactors - Common Setup Issues](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-with-sfsf-common-setup-issues/ba-p/13650311) for troubleshooting advice.
   
-2. [Activate Document Grounding for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-document-grounding-for/ba-p/13739501)
+2. [Activate Document Grounding](https://community.sap.com/t5/technology-blogs-by-sap/sap-btp-onboarding-series-joule-getting-started-with-document-grounding-for/ba-p/13739501)
    - This exercise will walk you along the following steps:
         1. Prepare the Sharepoint Integration    
         2. Activate the Grounding Service in your SAP BTP Subaccount & Create a Service Key
         3. Create a Destination in your SAP BTP Subaccount
         4. Set up Content Ingestion
         5. Test in Joule
+   - In addition, please find the videos demonstrated during the session as well as API collections for Postman and Bruno under [exercise 2](./exercises/ex2).
 
 ## Contributing
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
