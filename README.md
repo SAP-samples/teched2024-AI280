@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2024 session called AI280 - Set up Joule to answer questions in your own policy documents.
+This repository contains the material for the SAP TechEd 2024 session ["AI280 - Set up Joule to answer questions in your own policy documents"](https://www.sap.com/events/teched/virtual/flow/sap/te24/catalog/page/catalog/session/1722557682396001fuAf).
 ## Overview
 
 This session introduces attendees to how they can upload documents to their sharepoint ask questions about them via Joule...
