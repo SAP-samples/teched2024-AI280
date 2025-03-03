@@ -1,3 +1,4 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2024-AI280)](https://api.reuse.software/info/github.com/SAP-samples/teched2024-AI280)
 # AI280 - Set up Joule to answer questions in your own policy documents
 
 ## Description
